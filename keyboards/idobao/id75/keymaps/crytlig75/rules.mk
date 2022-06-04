@@ -7,8 +7,9 @@ BOOTLOADER = atmel-dfu
 #   change yes to no to disable
 #
 BOOTMAGIC_ENABLE  = yes   # Enable Bootmagic Lite
-CONSOLE_ENABLE 	  = yes   # Console for debug
-COMMAND_ENABLE 	  = yes   # Commands for debug and configuration
+CONSOLE_ENABLE 	  = no   # Console for debug
+COMMAND_ENABLE 	  = no   # Commands for debug and configuration
 RGB_MATRIX_ENABLE = yes   # RGB Matrix
 # UNICODEMAP_ENABLE = yes       # Enables UNICODE MAP
 UNICODE_ENABLE 	  = yes
+LTO_ENABLE		  = yes
