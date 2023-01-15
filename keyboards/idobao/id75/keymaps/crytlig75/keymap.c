@@ -32,17 +32,17 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 
 // Custom keycodes for custom events
 enum custom_keycodes {
-    WQVIM = SAFE_RANGE,
+    MENVIM = SAFE_RANGE,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-    case WQVIM:
+    case MENVIM:
         if (record->event.pressed) {
             SEND_STRING(SS_LCTL("c"));
-            SEND_STRING(":wq!");
+            SEND_STRING(":");
         } else {
-            // when keycode WQVIM is released
+            // when keycode MENVIM is released
         }
         break;
     }
@@ -78,11 +78,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [2] = LAYOUT_ortho_5x15(
-        _______,        UC_MOD,  _______,   _______, _______, _______, _______,      _______, _______, _______,     _______,    _______,    _______, _______, RGB_TOG,
-        _______,        _______, _______,   _______, _______, _______, _______,      _______, _______, _______,     _______,    XP(aa, AA), _______, _______, RGB_MOD,
-        KC_LCTL,        _______, _______,   _______, _______, _______, _______,      _______, _______, _______,     XP(ae, AE), XP(oe, OE), _______, _______, RGB_VAI,
-        WQVIM,          _______, _______,   _______, _______, _______, KC_SCLN,      _______, X(SNEK), TD(TD_C_SC), _______,    _______,    _______, _______, RGB_VAD,
-        TD(TD_PAR_PAR), _______, RESET,     _______, _______, _______, TD(TD_SC_CL), _______, _______, _______,     _______,    _______,    _______, _______, _______
+        _______,        UC_MOD,  _______,   _______, _______, _______, _______, _______, _______, _______,     _______,    _______,    _______, _______, RGB_TOG,
+        _______,        _______, _______,   _______, _______, _______, _______, _______, _______, _______,     _______,    XP(aa, AA), _______, _______, RGB_MOD,
+        KC_LCTL,        _______, _______,   _______, _______, _______, _______, _______, _______, _______,     XP(ae, AE), XP(oe, OE), _______, _______, RGB_VAI,
+        MENVIM,         _______, _______,   _______, _______, _______, KC_SCLN, _______, X(SNEK), TD(TD_C_SC), _______,    _______,    _______, _______, RGB_VAD,
+        TD(TD_PAR_PAR), _______, RESET,     _______, _______, _______, _______, _______, _______, _______,     _______,    _______,    _______, _______, _______
     ),
 };
 
