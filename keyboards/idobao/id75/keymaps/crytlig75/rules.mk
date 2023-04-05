@@ -12,3 +12,4 @@ COMMAND_ENABLE 	  = no    # Commands for debug and configuration
 RGB_MATRIX_ENABLE = yes   # RGB Matrix
 UNICODEMAP_ENABLE = yes   # Enables UNICODE MAP. Map is maintained in keymap.c, and requires WinCompose on Windows to work
 LTO_ENABLE		  = yes   # Reduce firmware binary size
+TAP_DANCE_ENABLE  = yes   # Enable tap dance

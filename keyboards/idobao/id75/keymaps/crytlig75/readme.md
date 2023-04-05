@@ -11,7 +11,9 @@ qmk compile -kb idobao/id75/v2 -km crytlig75
 ```
 
 ```bash
-# flash
-# Enter bootloading mode by m2+esc
+# Flash
+
+# Paste the following line to terminal and enter.
+# When it asks for bootloading mode, press m2+esc
 qmk flash -kb idobao/id75/v2 -km crytlig75
 ```

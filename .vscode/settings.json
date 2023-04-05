@@ -29,5 +29,6 @@
 	    "editor.formatOnSave": false
     },
     "cmake.configureOnOpen": true,
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cmake.sourceDirectory": "${workspaceFolder}/lib/googletest"
 }
